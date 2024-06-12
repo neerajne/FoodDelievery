@@ -1,0 +1,30 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    align-items: center;
+    gap: 20px; /* Add this property to increase the gap */
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+  }
+
+  .list-table-format .title {
+    background-color: #c9c9c9;
+  }
+  .cursor{
+    cursor: pointer;
+  }
+
+  .list-table-format img {
+    width: 50px;
+  }
+  
+  @media (max-width : 600px) {
+    .list-table-format {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .list-table-format .title {
+      display: none;
+    }
+  }
